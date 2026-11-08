@@ -1,11 +1,4 @@
-#!name = All In One Pro Max Ultimate
-#!desc = YouTube Premium + Locket Gold + SoundCloud + Spotify Premium + Sub-Store Công cụ Quản lý Proxy tổng hợp.
-#!author = GAUAPPLE & yfamilys & Duyvinh
-# Hệ thống tối ưu hóa cấu hình cho Shadowrocket
 
-[Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,://googleapis.com),(PROTOCOL,UDP)),REJECT
 
 [Header Rewrite]
 ^https?://://revenuecat.com(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
